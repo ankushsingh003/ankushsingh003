@@ -1,9 +1,15 @@
 <div align="center">
-  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="200" align="right" />
+  <img src="https://github-profile-trophy.vercel.app/?username=ankushsingh003&theme=radical&no-frame=true&no-bg=true&margin-w=4" />
+</div>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="180" align="right" />
   
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=2088FF&center=false&vCenter=true&width=435&lines=Hi+There!+%F0%9F%91%8B;I'm+Ankush+Kumar+Singh;Data+Scientist;Machine+Learning+Engineer;Python+Developer" alt="Typing SVG" />
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=2088FF&center=false&vCenter=true&width=435&lines=Hi+There!+%F0%9F%91%8B;I'm+Ankush+Kumar+Singh;Data+Scientist;Machine+Learning+Engineer;Python+Developer" alt="Typing SVG" />
+  </a>
   
-  <h1 align="left">Ankush Kumar Singh</h1>
+  <h1 align="left">Ankush Kumar Singh <img src="https://media.giphy.com/media/hvRJCLFzcu4RqlUuNd/giphy.gif" width="30px"></h1>
 
   <p align="left">
     <a href="https://github.com/ankushsingh003">
@@ -82,3 +88,7 @@ I am a passionate **Data Scientist** and **Machine Learning Engineer** with a st
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
 </p>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif" width="200" zoom="1.5"/>
+</div>
