@@ -2,7 +2,7 @@
   
 # 💫 Welcome to My GitHub Universe! 💫
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Ankush%20Kumar%20Singh&fontSize=39&fontAlignY=30&animation=twinkling&fontColor=gradient" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=190&section=header&text=Ankush%20Kumar%20Singh&fontSize=39&fontAlignY=20&animation=twinkling&fontColor=gradient" width="100%"/>
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Data+Scientist+%F0%9F%93%8A+%7C+ML+Engineer+%F0%9F%A4%96;Building+Intelligent+AI+Systems+%F0%9F%9A%80;Computer+Vision+%E2%80%A2+GenAI+%E2%80%A2+Deep+Learning)](https://git.io/typing-svg)
 
