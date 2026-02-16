@@ -1,6 +1,6 @@
 <div align="center">
   
-# 💫 Welcome to ANKUSH's GitHub Universe! 💫
+# 💫 Welcome to My GitHub Universe! 💫
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=190&section=header&text=Ankush%20Kumar%20Singh&fontSize=39&fontAlignY=20&animation=twinkling&fontColor=gradient" width="100%"/>
 
