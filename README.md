@@ -116,8 +116,8 @@ me.say_hi()
 ## � GitHub Analytics
 
 <div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=ankushsingh003&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=false&rank_icon=github&show_rank=true" alt="GitHub Stats" />
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankushsingh003&layout=compact&langs_count=8&theme=tokyonight&hide_border=false" alt="Top Languages" />
+  <img height="180em" src="https://github-readme-stats-one.vercel.app/api?username=ankushsingh003&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=false" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-stats-one.vercel.app/api/top-langs/?username=ankushsingh003&layout=compact&langs_count=8&theme=tokyonight&hide_border=false" alt="Top Languages" />
 </div>
 
 <div align="center">
