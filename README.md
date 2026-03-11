@@ -106,16 +106,25 @@ me.say_hi()
 
 ## 🌟 Featured Projects
 
+<!-- START_SECTION:recent-repos -->
 <div align="center">
 
-| Project | Description | Tech Stack |
-| :--- | :--- | :--- |
-| **[🖼️ AI VISION](https://github.com/ankushsingh003/AI_VISION-Image_classification_model_CIFAR10_FLASK)** | CIFAR-10 Image Classification with Flask UI | `TensorFlow` `Flask` `CNN` |
-| **[📄 TEXT-SUMMARIZER](https://github.com/ankushsingh003/TEXT-SUMMARIZER)** | PEGASUS-powered Text Summarization | `Transformers` `NLP` `Python` |
-| **[🏥 Breast-Cancer-Classification](https://github.com/ankushsingh003/Breast-Cancer-Classification-with-Neural-Network-)** | Neural Network for Tumor Classification | `Deep Learning` `ANN` `Healthcare` |
-| **[📈 Sales Analytics](https://github.com/ankushsingh003/sales-analytics-report-)** | Interactive Sales Data Analysis | `Pandas` `Matplotlib` `Plotly` |
+<a href="https://github.com/ankushsingh003/Custom-High-Performance-Key-Value-Store">
+  <img src="https://socialify.git.ci/ankushsingh003/Custom-High-Performance-Key-Value-Store/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
+</a>
+<a href="https://github.com/ankushsingh003/High-Frequency-Order-Matching-Engine">
+  <img src="https://socialify.git.ci/ankushsingh003/High-Frequency-Order-Matching-Engine/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
+</a>
+<br/>
+<a href="https://github.com/ankushsingh003/IITBHU">
+  <img src="https://socialify.git.ci/ankushsingh003/IITBHU/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
+</a>
+<a href="https://github.com/ankushsingh003/RAILSENTRY">
+  <img src="https://socialify.git.ci/ankushsingh003/RAILSENTRY/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
+</a>
 
 </div>
+<!-- END_SECTION:recent-repos -->
 
 
 
