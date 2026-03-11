@@ -104,26 +104,13 @@ me.say_hi()
 
 ---
 
-## 🌟 Featured Projects
+## 🚀 Recent Works
+
+<div align="center">
+  <img src="./recent_works.svg" width="100%" alt="Recent Works Marquee" />
+</div>
 
 <!-- START_SECTION:recent-repos -->
-<div align="center">
-
-<a href="https://github.com/ankushsingh003/Custom-High-Performance-Key-Value-Store">
-  <img src="https://socialify.git.ci/ankushsingh003/Custom-High-Performance-Key-Value-Store/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
-</a>
-<a href="https://github.com/ankushsingh003/High-Frequency-Order-Matching-Engine">
-  <img src="https://socialify.git.ci/ankushsingh003/High-Frequency-Order-Matching-Engine/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
-</a>
-<br/>
-<a href="https://github.com/ankushsingh003/IITBHU">
-  <img src="https://socialify.git.ci/ankushsingh003/IITBHU/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
-</a>
-<a href="https://github.com/ankushsingh003/RAILSENTRY">
-  <img src="https://socialify.git.ci/ankushsingh003/RAILSENTRY/image?description=1&font=Inter&name=1&owner=1&pattern=Plus&theme=Dark" width="400" />
-</a>
-
-</div>
 <!-- END_SECTION:recent-repos -->
 
 
