@@ -1,0 +1,28 @@
+<svg width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .marquee {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      fill: #00D9FF;
+      white-space: nowrap;
+    }
+    .animate {
+      animation: marquee 15s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-33.33%); }
+    }
+    .background {
+      fill: #0D1117;
+      stroke: #1B2331;
+      stroke-width: 2;
+      rx: 10;
+    }
+  </style>
+  <rect x="1" y="1" width="398" height="58" class="background" />
+  <g class="animate">
+    <text y="50%" x="20" dominant-baseline="middle" class="marquee">🐍 Aegis-Hedge-Systems  •  🐍 Aegis-Hedge-Systems  •  🐍 Aegis-Hedge-Systems</text>
+  </g>
+</svg>
