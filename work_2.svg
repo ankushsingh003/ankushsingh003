@@ -1,27 +1,37 @@
-<svg width="400" height="60" viewBox="0 0 400 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="390" height="70" viewBox="0 0 390 70" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
     .marquee {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 18px;
       fill: #00D9FF;
       white-space: nowrap;
     }
     .animate {
-      animation: marquee 15s linear infinite;
+      animation: marquee 12s linear infinite;
     }
     @keyframes marquee {
       0% { transform: translateX(0); }
       100% { transform: translateX(-33.33%); }
     }
-    .background {
+    .card-background {
       fill: #0D1117;
-      stroke: #1B2331;
+      stroke: url(#card_border_1);
       stroke-width: 2;
-      rx: 10;
+      rx: 12;
+    }
+    .glow {
+      filter: blur(4px);
+      opacity: 0.3;
     }
   </style>
-  <rect x="1" y="1" width="398" height="58" class="background" />
+  <defs>
+    <linearGradient id="card_border_1" x1="0" y1="0" x2="390" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF"/>
+      <stop offset="1" stop-color="#0055FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="386" height="66" class="card-background" />
   <g class="animate">
     <text y="50%" x="20" dominant-baseline="middle" class="marquee">⚙️ High-Frequency-Order-Matching-Engine  •  ⚙️ High-Frequency-Order-Matching-Engine  •  ⚙️ High-Frequency-Order-Matching-Engine</text>
   </g>

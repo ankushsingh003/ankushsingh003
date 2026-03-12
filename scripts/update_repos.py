@@ -19,20 +19,54 @@ def get_tech_emoji(lang):
         "HTML": "🌐",
         "CSS": "🎨",
         "Jupyter Notebook": "📓",
-        "Shell": "🐚"
+        "Shell": "🐚",
+        "C": "🧱",
+        "Java": "☕",
+        "Go": "🐹",
+        "Rust": "🦀",
+        "PHP": "🐘",
+        "Ruby": "💎"
     }
     return lang_map.get(lang, "🚀")
 
+def generate_header_svg():
+    width = 800
+    height = 100
+    svg = f'''<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .header {{
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 38px;
+      fill: url(#paint0_linear);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }}
+    .subtext {{
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      fill: #8BADC1;
+    }}
+  </style>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="0" x2="{width}" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF"/>
+      <stop offset="1" stop-color="#0055FF"/>
+    </linearGradient>
+  </defs>
+  <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle" class="header">🚀 Recent Works</text>
+  <text x="50%" y="75%" dominant-baseline="middle" text-anchor="middle" class="subtext">Automatically updated dashboard of my latest activity</text>
+</svg>'''
+    return svg
+
 def generate_card_svg(repo, index):
-    width = 400
-    height = 60
+    width = 390
+    height = 70
     name = repo['name']
     lang = repo.get('language', 'Other')
     emoji = get_tech_emoji(lang)
     
     text = f"{emoji} {name}"
-    # Duplicate for seamless marquee if name is long, or just center if short.
-    # For variety, let's keep the marquee but per card.
     display_text = f"{text}  •  {text}  •  {text}"
     
     svg = f'''<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,25 +74,35 @@ def generate_card_svg(repo, index):
     .marquee {{
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       font-weight: 700;
-      font-size: 20px;
+      font-size: 18px;
       fill: #00D9FF;
       white-space: nowrap;
     }}
     .animate {{
-      animation: marquee 15s linear infinite;
+      animation: marquee 12s linear infinite;
     }}
     @keyframes marquee {{
       0% {{ transform: translateX(0); }}
       100% {{ transform: translateX(-33.33%); }}
     }}
-    .background {{
+    .card-background {{
       fill: #0D1117;
-      stroke: #1B2331;
+      stroke: url(#card_border_{index});
       stroke-width: 2;
-      rx: 10;
+      rx: 12;
+    }}
+    .glow {{
+      filter: blur(4px);
+      opacity: 0.3;
     }}
   </style>
-  <rect x="1" y="1" width="{width-2}" height="{height-2}" class="background" />
+  <defs>
+    <linearGradient id="card_border_{index}" x1="0" y1="0" x2="{width}" y2="{height}" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D9FF"/>
+      <stop offset="1" stop-color="#0055FF"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="{width-4}" height="{height-4}" class="card-background" />
   <g class="animate">
     <text y="50%" x="20" dominant-baseline="middle" class="marquee">{display_text}</text>
   </g>
@@ -74,13 +118,22 @@ def update_readme(repos):
     card_markdown = '<div align="center">\n\n'
     for i, repo in enumerate(repos):
         card_name = f"work_{i+1}.svg"
-        card_markdown += f'<a href="{repo["html_url"]}"><img src="./{card_name}" width="390" alt="{repo["name"]}" /></a>\n'
+        card_markdown += f'<a href="{repo["html_url"]}"><img src="./{card_name}" width="380" alt="{repo["name"]}" /></a>\n'
         if (i + 1) % 2 == 0 and (i + 1) != len(repos):
             card_markdown += '<br/>\n'
     card_markdown += '\n</div>'
 
-    pattern = r'<!-- START_SECTION:recent-repos -->.*?<!-- END_SECTION:recent-repos -->'
-    replacement = f'<!-- START_SECTION:recent-repos -->\n{card_markdown}\n<!-- END_SECTION:recent-repos -->'
+    # Remove the old section and replace with polished one
+    pattern = r'## 🚀 Recent Works.*?<!-- END_SECTION:recent-repos -->'
+    replacement = f'''## 🚀 Recent Works
+
+<div align="center">
+  <img src="./works_header.svg" width="100%" alt="Recent Works Hero" />
+</div>
+
+<!-- START_SECTION:recent-repos -->
+{card_markdown}
+<!-- END_SECTION:recent-repos -->'''
     
     updated_content = re.sub(pattern, replacement, content, flags=re.DOTALL)
     
@@ -94,6 +147,11 @@ if __name__ == "__main__":
     try:
         repos = fetch_repos(username, token)
         
+        # Generate Header SVG
+        header_svg = generate_header_svg()
+        with open("works_header.svg", "w", encoding="utf-8") as f:
+            f.write(header_svg)
+            
         # Generate individual SVGs
         for i, repo in enumerate(repos):
             svg_content = generate_card_svg(repo, i)
@@ -101,7 +159,7 @@ if __name__ == "__main__":
                 f.write(svg_content)
         
         update_readme(repos)
-        print(f"Successfully generated {len(repos)} cards and updated README.md.")
+        print(f"Successfully generated header and {len(repos)} cards. Updated README.md.")
     except Exception as e:
         print(f"Error: {e}")
         exit(1)
