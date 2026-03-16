@@ -1,0 +1,30 @@
+permissions:
+  contents: write
+name: Update Recent Repositories
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch: # Allows manual triggering
+
+jobs:
+  update-readme:
+    name: Update README with recent repos
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # This is the critical fix for the push failure
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4 # Updated from v3
+        
+      - name: Setup Python
+        uses: actions/setup-python@v5 # Updated from v4
+        with:
+          python-version: '3.x'
+          
+      # Add your specific steps here, like running a python script:
+      # - name: Run script to update README
+      #   run: python update_repos.py
+      
+      # If you were using a pre-built marketplace action, it would go here instead.
