@@ -104,30 +104,6 @@ me.say_hi()
 
 ---
 
-## 🚀 Recent Works
-
-<div align="center">
-  <img src="./works_header.svg" width="100%" alt="Recent Works Hero" />
-</div>
-
-<!-- START_SECTION:recent-repos -->
-<div align="center">
-
-<a href="https://github.com/ankushsingh003/Custom-High-Performance-Key-Value-Store"><img src="./work_1.svg" width="380" alt="Custom-High-Performance-Key-Value-Store" /></a>
-<a href="https://github.com/ankushsingh003/High-Frequency-Order-Matching-Engine"><img src="./work_2.svg" width="380" alt="High-Frequency-Order-Matching-Engine" /></a>
-<br/>
-<a href="https://github.com/ankushsingh003/IITBHU"><img src="./work_3.svg" width="380" alt="IITBHU" /></a>
-<a href="https://github.com/ankushsingh003/RAILSENTRY"><img src="./work_4.svg" width="380" alt="RAILSENTRY" /></a>
-<br/>
-<a href="https://github.com/ankushsingh003/Aegis-Hedge-Systems"><img src="./work_5.svg" width="380" alt="Aegis-Hedge-Systems" /></a>
-
-</div>
-<!-- END_SECTION:recent-repos -->
-
-
-
----
-
 ## 🤝 Let's Connect & Collaborate!
 
 <div align="center">
